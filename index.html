@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WebtrixPro</title>
+</head>
+<body>
+    <div id="hero_section">
+        <div id="above_hero">
+            <div id="navigation">
+                <div id="logo">
+                    <img src="https://logistics.webtrixpro.com/wp-content/uploads/2021/03/logo-white1.png" alt="">
+                </div>
+                <div class="right_side">
+                    <button class="cta">LETS TALK. SCHEDULE A CALL</button>
+                    <div>
+                        <div style="width: 30px; height: 1.5px; background: white"></div>
+                        <div style="width: 30px; height: 1.5px;;margin-top: 10px; display: flex; justify-content: flex-end;">
+                            <div style="width: 22px; height: 1.5px; background: white;"></div>
+                        </div>
+                        <div style="width: 30px; height: 2px; background: white;margin-top: 10px; "></div>
+                    </div>
+                </div>
+            </div>
+            <div id="center_section">
+                <h1>Turning Entrepreneurs' digital product dreams into reality</h1>
+            </div>
+            <div style="display: flex;justify-content: center;">
+            <div id="slider_container">
+                <div id="left_arrow">
+                    <button id="go-left">
+                        <i class="fa fa-chevron-left"></i>
+                    </button> 
+                </div>
+                <div id="main_slider">
+                    <div class="slider"><!-- The slider -->
+                        <div><!-- A mandatory div used by the slider -->
+                            <!-- Each div below is considered a slide -->
+                            <div class="top_review"><i>"The main impact WebtrixPro had on our business is the time saving in admin and sales people who now use an application that saves money due to a more efficient work environment." <br /> <br />~Santiago Seeber, Nervous Waters</i></div>
+                            <div class="top_review"><i>"The main impact WebtrixPro had on our business is the time saving in admin and sales people who now use an application that saves money due to a more efficient work environment." <br /> <br />~Santiago Seeber, Nervous Waters</i></div>
+                            <div class="top_review"><i>"The main impact WebtrixPro had on our business is the time saving in admin and sales people who now use an application that saves money due to a more efficient work environment." <br /> <br />~Santiago Seeber, Nervous Waters</i></div>
+                            <div class="top_review"><i>"The main impact WebtrixPro had on our business is the time saving in admin and sales people who now use an application that saves money due to a more efficient work environment." <br /> <br />~Santiago Seeber, Nervous Waters</i></div>
+                            <div class="top_review"><i>"The main impact WebtrixPro had on our business is the time saving in admin and sales people who now use an application that saves money due to a more efficient work environment." <br /> <br />~Santiago Seeber, Nervous Waters</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="left_arrow">
+                    <button id="go-right">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/diyslider.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/p.js"></script>
+
+<script>
+    // let sliderWidth = 500;
+    // function lessThan800(x) {
+    //     if(x.matches) {
+    //         sliderWidth = 400;
+    //     } else {
+    //         sliderWidth = 500;
+    //     }
+    // }
+    // let x = window.matchMedia("(max-width: 800px)");
+    // lessThan800(x);
+    // x.addListener(lessThan800);
+
+    $(".slider").diyslider({
+    width: "500", // width of the slider
+    height: "200px", // height of the slider
+    display: 1, // number of slides you want it to display at once
+    loop: false // disable looping on slides
+}); // this is all you need!
+
+// use buttons to change slide
+$("#go-left").bind("click", function(){
+    // Go to the previous slide
+    $(".slider").diyslider("move", "back");
+});
+$("#go-right").bind("click", function(){
+    // Go to the previous slide
+    $(".slider").diyslider("move", "forth");
+});
+</script>
+</html>
